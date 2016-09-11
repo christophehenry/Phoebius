@@ -1,0 +1,10 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+	  xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+        android:id="@+id/menu_action_end"
+        android:icon="@drawable/end"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:title="End"
+		tools:ignore="HardcodedText"/>
+</menu>

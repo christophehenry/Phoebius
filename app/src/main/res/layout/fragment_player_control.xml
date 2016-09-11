@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/background_floating_material_dark"
+			  android:gravity="center"
+			  android:orientation="vertical"
+			  android:padding="0dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="0dp"
+		android:orientation="horizontal"
+		android:padding="5dp">
+
+		<TextView
+			android:id="@+id/currentDurationLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|start"
+			android:layout_margin="0dp"
+			android:layout_weight="1"
+			android:gravity="start"
+			android:padding="2dp"
+			android:text="00:00"
+			android:textColor="@android:color/darker_gray"
+			android:textStyle="bold"
+			tools:ignore="HardcodedText"/>
+
+		<SeekBar
+			android:id="@+id/songProgressBar"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginBottom="5dp"
+			android:layout_marginLeft="0dp"
+			android:layout_marginRight="0dp"
+			android:layout_marginTop="5dp"
+			android:layout_weight="100"
+			android:maxHeight="@dimen/seekbar_height"
+			android:minHeight="@dimen/seekbar_height"
+			android:paddingBottom="3dp"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			android:paddingTop="3dp"
+			android:progressDrawable="@drawable/seekbar_progress"
+			android:thumb="@drawable/seek_handler"/>
+		<!-- Total Duration Label -->
+		<TextView
+			android:id="@+id/totalDurationLabel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|end"
+			android:layout_margin="0dp"
+			android:layout_weight="1"
+			android:gravity="end"
+			android:padding="2dp"
+			android:text="00:00"
+			android:textColor="@android:color/darker_gray"
+			android:textStyle="bold"
+			tools:ignore="HardcodedText"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="top|center_vertical"
+		android:layout_margin="0dp"
+		android:gravity="center|top"
+		android:orientation="horizontal"
+		android:paddingBottom="0dp"
+		android:paddingEnd="5dp"
+		android:paddingStart="5dp"
+		android:paddingTop="0dp">
+
+		<ImageButton
+			android:id="@+id/btnRepeat"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="7dp"
+			android:background="@null"
+			android:src="@drawable/btn_repeat"
+			tools:ignore="ContentDescription"/>
+		<!-- Previous Button -->
+		<ImageButton
+			android:id="@+id/btnPrevious"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="7dp"
+			android:background="@color/material_blue_grey_900"
+			android:elevation="5dp"
+			android:src="@android:drawable/ic_media_previous"/>
+		<!-- Backward Button -->
+		<ImageButton
+			android:id="@+id/btnBackward"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="7dp"
+			android:background="@color/material_blue_grey_900"
+			android:elevation="5dp"
+			android:src="@android:drawable/ic_media_rew"/>
+		<!-- Play Button -->
+		<android.support.design.widget.FloatingActionButton
+			android:id="@+id/btnPlayPause"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="5dp"
+			android:elevation="5dp"
+			android:src="@android:drawable/ic_media_play"
+			android:theme="@style/Widget.Design.FloatingActionButton"/>
+		<!-- Forward Button -->
+		<ImageButton
+			android:id="@+id/btnForward"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="7dp"
+			android:background="@color/material_blue_grey_900"
+			android:elevation="5dp"
+			android:src="@android:drawable/ic_media_ff"/>
+		<!-- Next Button -->
+		<ImageButton
+			android:id="@+id/btnNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="7dp"
+			android:background="@color/material_blue_grey_900"
+			android:elevation="5dp"
+			android:src="@android:drawable/ic_media_next"/>
+		<!-- Shuffle Button -->
+		<ImageButton
+			android:id="@+id/btnShuffle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="7dp"
+			android:background="@null"
+			android:src="@drawable/btn_shuffle"/>
+	</LinearLayout>
+</LinearLayout>

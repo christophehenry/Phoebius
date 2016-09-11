@@ -1,0 +1,8 @@
+<resources>
+    <style name="PhoebiusTheme" parent="Theme.AppCompat.NoActionBar">
+		<item name="android:windowActionBarOverlay">true</item>
+		<item name="colorAccent">@color/material_blue_grey_900</item>
+	</style>
+	<color name="black">#000</color>
+	<color name="white">#fff</color>
+</resources>

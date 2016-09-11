@@ -1,0 +1,147 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/background_floating_material_dark"
+	android:orientation="vertical">
+
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="2dp">
+
+		<ImageView
+			android:id="@+id/notifAlbumCover"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_gravity="center"
+			android:layout_margin="5dp"
+			android:src="@drawable/default_cover"/>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="5dp"
+			android:gravity="center|start"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/notifSongTitleLabel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:lines="1"
+				android:padding="2dp"
+				android:text="@string/albumTitleText"
+				android:textColor="#FFFFFF99"
+				android:textSize="20sp"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:id="@+id/notifSongArtistLabel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:lines="1"
+				android:padding="2dp"
+				android:text="@string/albumArtistText"
+				android:textColor="#FFFFFF99"
+				android:textSize="18sp"/>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="0dp"
+		android:background="@color/background_floating_material_dark"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:padding="0dp">
+
+		<ImageButton
+			android:id="@+id/notifBtnRepeat"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="0dp"
+			android:layout_weight="1"
+			android:background="@null"
+			android:padding="3dp"
+			android:src="@drawable/btn_repeat"
+			tools:ignore="ContentDescription"/>
+		<!-- Previous Button -->
+		<ImageButton
+			android:id="@+id/notifBtnPrevious"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="0dp"
+			android:layout_weight="2"
+			android:background="@null"
+			android:padding="3dp"
+			android:src="@drawable/btn_previous"
+			tools:ignore="ContentDescription"/>
+		<!-- Backward Button -->
+		<ImageButton
+			android:id="@+id/notifBtnBackward"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="0dp"
+			android:layout_weight="2"
+			android:background="@null"
+			android:padding="3dp"
+			android:src="@drawable/btn_backward"
+			tools:ignore="ContentDescription"/>
+		<!-- Play Button -->
+		<ImageButton
+			android:id="@+id/notifBtnPlayPause"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="0dp"
+			android:layout_weight="1"
+			android:background="@null"
+			android:padding="3dp"
+			android:src="@drawable/btn_play"
+			tools:ignore="ContentDescription"/>
+		<!-- Forward Button -->
+		<ImageButton
+			android:id="@+id/notifBtnForward"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="0dp"
+			android:layout_weight="2"
+			android:background="@null"
+			android:padding="3dp"
+			android:src="@drawable/btn_forward"
+			tools:ignore="ContentDescription"/>
+		<!-- Next Button -->
+		<ImageButton
+			android:id="@+id/notifBtnNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="0dp"
+			android:layout_weight="2"
+			android:background="@null"
+			android:padding="3dp"
+			android:src="@drawable/btn_next"
+			tools:ignore="ContentDescription"/>
+		<!-- Shuffle Button -->
+		<ImageButton
+			android:id="@+id/notifBtnShuffle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="0dp"
+			android:layout_weight="1"
+			android:background="@null"
+			android:padding="3dp"
+			android:src="@drawable/btn_shuffle"/>
+	</LinearLayout>
+</LinearLayout>

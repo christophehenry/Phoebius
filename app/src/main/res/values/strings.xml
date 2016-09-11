@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Phoebius</string>
+	<string name="action_settings">Settings</string>
+	<string name="title_activity_play">Play</string>
+	<string name="album">Albums</string>
+	<string name="playlist">Playlists</string>
+	<string name="titles">Titles</string>
+	<string name="curr_playing">Currently playing</string>
+	<string name="artiste">Artiste</string>
+
+	<string name="albumDateText">Date</string>
+	<string name="albumArtistText">Artiste</string>
+	<string name="albumTitleText">Titre</string>
+	<string name="albumNbSongText">Nombre de pistes</string>
+	<string name="title_playlistsong_list">PlaylistSongs</string>
+	<string name="title_playlistsong_detail">PlaylistSong Detail</string>
+</resources>
